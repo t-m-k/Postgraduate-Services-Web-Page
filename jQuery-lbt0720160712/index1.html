@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery自定义图片切换特效代码 - 站长素材</title>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/L_slide.js"></script>
+
+<style>
+* {margin:0;padding:0;}
+ul {list-style:none;}
+
+.wrap {width:1001px;height:325px;position:relative;overflow:hidden;float:left;margin:20px;}
+.slidebox {width:1001px;position:absolute;top:0;left:0;height:325px;}
+.slidebox li {float:left;width:1001px;height:325px;left:0;top:0;}
+.slidebox li img {display:block;width:1001px;height:325px;}
+.dot {position:absolute;width:100%;height:30px;background:rgba(0,0,0,0.3);text-align:right;bottom:0;left:0;}
+.dot p {margin-right:10px;}
+.dot b {width:17px;height:17px;border-radius:20px;color:#333;display:inline-block;border:1px solid #fff;background:#fff;text-align:center;line-height:17px;margin:0 3px;margin-top:6px;cursor:pointer;font-weight:normal;}
+.dot .cur {background:#F63;color:#fff;border:1px solid #f63;}
+</style>
+
+<script type="text/javascript">
+$(function(){
+	
+	//affect:3
+	$(".af3").slide({
+		affect:3,
+		time:3000,
+		speed:400,
+	});
+	
+	//affect:4
+	$(".af4").slide({
+		affect:4,
+		time:3000,
+		speed:400,
+	});
+})
+</script>
+</head>
+
+<body>
+
+
+<div class="wrap af3">
+	<ul class="slidebox">
+		<li><a href="#"><img src="images/p1.jpg" width="1001" height="325" /></a></li>
+		<li><a href="#"><img src="images/p2.jpg" width="1001" height="325" /></a></li>
+		<li><a href="#"><img src="images/p3.jpg" width="1001" height="325" /></a></li>
+		<li><a href="#"><img src="images/p4.jpg" width="1001" height="325" /></a></li>
+	</ul>
+</div>
+
+
+
+</body>
+</html>

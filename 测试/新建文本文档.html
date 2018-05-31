@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+ 
+    <link rel="stylesheet" href="swiper-4.2.6.min.css">
+ 
+    <style>
+    /*样式*/
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #fff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-container {
+        width: 100%;
+        position: absolute;
+        top: 35%;
+        margin-left: -150px;
+        margin-top: -150px;
+		background-color:red;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+    }
+    </style>
+</head>
+<body>
+<!-- Swiper轮播图 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="1.jpg"/></div>
+            <div class="swiper-slide"><img src="p1.jpg"/></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+ 
+    <script src="swiper-4.2.6.min.js"></script>
+ 
+   <script>
+    var swiper = new Swiper('.swiper-container', {
+	autoplay: {
+    delay: 3000,
+    stopOnLastSlide: false,
+    disableOnInteraction: true,
+    },
+        pagination: '.swiper-pagination',
+         
+        //循环 往返的动
+        loop:true,
+                //小白点不能点击
+        autoplayDisableOnInteraction:true,
+         
+        effect: 'cube',
+        grabCursor: true,
+        cube: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94
+        },
+		pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+    </script>
+</body>
+</html>
