@@ -1,6 +1,7 @@
-var screen_width = $(document).width();
+
+ $(document).ready(function(){
+	 var screen_width = $(window).width();
 $(".footer").width(screen_width);
-// $(document).ready(function(){
 // alert($(window).height()); //浏览器当前窗口可视区域高度
 // alert($(document).height()); //浏览器当前窗口文档的高度
 // alert($(document.body).height());//浏览器当前窗口文档body的高度
@@ -11,4 +12,4 @@ $(".footer").width(screen_width);
 // alert($(document.body).width());//浏览器当前窗口文档body的宽度
 // alert($(document.body).outerWidth(true));//浏览器当前窗口文档body的总宽度 包括border padding margin
 
-// });
+ });

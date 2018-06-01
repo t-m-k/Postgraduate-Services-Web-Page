@@ -15,8 +15,9 @@ body{
 }
 .container{
 	display:block;
-	width:1080px;
+	width:1200px;
 	margin:0 auto;
+	padding:0 60px;
 }
 .fl{float:left;}
 .fr{float:right;}
@@ -122,6 +123,7 @@ body{
 .imgintroduce{
 	margin-top: 20px;
 }
+
 .subject_name,.subject_introduce{
 	margin-top: 80px;
 }
@@ -174,6 +176,12 @@ body{
 	background-color: rgb(202,0,0);
 	border-radius:5px;
 }
+.submit_button{
+	padding: 10px 180px;
+	color: white;
+	background-color: rgb(202,0,0);
+	border-radius:5px;
+}
 
 #sign_blur_img{
 	margin:0 auto;
@@ -190,7 +198,22 @@ body{
 	margin:0 auto;
 	width:1100px;
 }
-.sign_intrduce,.sign_table{display: inline-block;margin-top: 80px;}.info_table{float: right; margin-top: 40px;}
+.sign_intrduce,.sign_table{display: inline-block;margin-top: 80px;}.info_table{float: right;width:400px; margin-top: 40px;}
+
+
+.info_table input {
+  height: 35px;
+  margin: 0;
+  padding: 6px 12px;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit; }
+  
+
+.info_table input , select {
+  border: 1px solid #CCC;
+  width: 320px; }
 
 
 .subject04{margin-top: 100px;}
