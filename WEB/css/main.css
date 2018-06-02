@@ -13,6 +13,7 @@ body{
 	font-size: 14px;
 	color: #444;
 }
+
 .container{
 	display:block;
 	width:1200px;
@@ -238,6 +239,7 @@ body{
 .target_img{margin-top: -32px;}.person_tail{margin-top: -31px;padding: 25px 10px 10px 10px;}
 
 .myfooter{
+	display:block;
 	border-top: 3px solid rgb(194,0,0);
 	margin-top: 100px;
 	background-color: rgb(40,40,40);
@@ -252,7 +254,7 @@ body{
 .sure_func a,.sure_func span,.sure_func2 a,.sure_func2 span {
 	color: rgb(213,213,213);
 }
-.copyright,.sure_func2{
+.mycopyright,.sure_func2{
 	margin-top:3%;
 }
 .sure_func a:hover,.sure_func2 a:hover{
