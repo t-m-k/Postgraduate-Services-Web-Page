@@ -19,6 +19,11 @@ body{
 	margin:0 auto;
 	padding:0 60px;
 }
+.container1{
+	display:block;
+	width:1200px;
+	margin:0 auto;
+}
 .fl{float:left;}
 .fr{float:right;}
 .clearf:after,.clearf:before{
@@ -216,7 +221,21 @@ body{
   width: 320px; }
 
 
-.subject04{margin-top: 100px;}
+.subject04{margin-top: 160px;}.subject05{margin-top: 100px;}
+
+.person_introduce{width: 100%;margin-top: 80px;}
+/*.first_introduce,.sencond_introduce,.third_introduce{background-color: red;}*/
+.sencond_introduce,.third_introduce{margin-left: 54px;}
+.first_introduce img,.sencond_introduce img,.third_introduce img{
+	-moz-background-size:contain|cover;
+	-webkit-background-size:contain|cover;
+	-o-background-size:contain|cover;
+	background-size:contain|cover;
+	width:100%;
+	height: auto;
+}
+.person_img_1{width: 65%;}
+.target_img{margin-top: -32px;}.person_tail{margin-top: -31px;padding: 25px 10px 10px 10px;}
 
 .myfooter{
 	border-top: 3px solid rgb(194,0,0);

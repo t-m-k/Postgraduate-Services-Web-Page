@@ -1,7 +1,12 @@
 
  $(document).ready(function(){
-	 var screen_width = $(window).width();
-$(".footer").width(screen_width);
+	 var screen_width = $(document.body).width();
+	// alert(screen_width);
+	if(screen_width < 1200) screen_width = 1200;
+	alert(screen_width);
+	$(body).width(screen_width);
+	$(".footer").width(screen_width);
+	
 // alert($(window).height()); //浏览器当前窗口可视区域高度
 // alert($(document).height()); //浏览器当前窗口文档的高度
 // alert($(document.body).height());//浏览器当前窗口文档body的高度
