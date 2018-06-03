@@ -124,6 +124,7 @@ body{
 }
 
 .swiper-slide,.swiper-img,.swiper-a{
+	overflow:hide;
 	width: 100%;
 }
 .imgintroduce{
