@@ -62,15 +62,16 @@ body{
 	#width: 50%;
 	float:left;
 	margin-left:1%;
-	margin-top:0.5%;
+	margin-top:5%;
 	display:inline-block;
 }
 .logotext1{
-	display: inline;
+	#display: inline;
+	margin-left:7%;
 }
 .logotext2{
 	#float: left;
-	margin-left:25%;
+	margin-left:1%;
 }
 .myfunc{
 	width: 65%;
@@ -120,12 +121,14 @@ body{
 	width: 100%;
     position: absolute;
     top: 35%;
-	background-color:red;
+	height:600px;
+	#background-color:red;
 }
 
 .swiper-slide,.swiper-img,.swiper-a{
 	overflow:hide;
 	width: 100%;
+	height:100%;
 }
 .imgintroduce{
 	margin-top: 20px;
@@ -134,7 +137,7 @@ body{
 .subject_name,.subject_introduce{
 	margin-top: 80px;
 }
-.first{float: left;background-color: red;}
+.first{float: left;#background-color: red;}
 .borad_img_1 img,.borad_img_2 img,.borad_img_3 img,.img_item img{
 	-moz-background-size:contain|cover;
 	-webkit-background-size:contain|cover;
@@ -143,8 +146,8 @@ body{
 	width:100%;
 	height: auto;
 }
-.second{margin-left: 5%;background-color: green;}
-.third{float: right;background-color: red;}
+.second{margin-left: 5%;#background-color: green;}
+.third{float: right;#background-color: red;}
 
 .downintroduce{
 	margin-top: 60px;
@@ -180,7 +183,8 @@ body{
 .a_button{
 	padding: 10px 60px;
 	color: white;
-	background-color: rgb(202,0,0);
+	#background-color: rgb(202,0,0);
+	background-color: rgb(233, 77, 26);
 	border-radius:5px;
 }
 .submit_button{
@@ -205,7 +209,11 @@ body{
 	margin:0 auto;
 	width:1100px;
 }
-.sign_intrduce,.sign_table{display: inline-block;margin-top: 80px;}.info_table{float: right;width:400px; margin-top: 40px;}
+.sign_intrduce,.sign_table{display: inline-block;margin-top: 80px;}.info_table{float: left;width:400px; margin-top: 40px;margin-left:20px;}
+.html_enter{
+	margin-left:120px;
+	margin-bottom:50px;
+}
 
 
 .info_table input {
@@ -270,4 +278,9 @@ body{
 }
 .footer_right img{
 	margin-left:3%;
+}
+
+
+*{
+	font-family:黑体;
 }
