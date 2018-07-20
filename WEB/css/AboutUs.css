@@ -1,0 +1,8 @@
+#HeadDownImg img{
+	-moz-background-size:contain|cover;
+	-webkit-background-size:contain|cover;
+	-o-background-size:contain|cover;
+	background-size:contain|cover;
+	width:100%;
+	height: 380px;
+}
