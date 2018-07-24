@@ -13,6 +13,8 @@ function changeDivWidth(){
 	//$(".mybody").width(screen_width);
 	$("#body").width(screen_width);
 	$(".myfooter").width(screen_width);
+	$(".About_TimeLine").width(screen_width);
+	
 }
  //$(document).ready(function(){
 // var screen_width = $(document.body).width();
