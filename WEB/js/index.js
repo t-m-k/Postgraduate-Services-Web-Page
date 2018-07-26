@@ -14,7 +14,9 @@ function changeDivWidth(){
 	$("#body").width(screen_width);
 	$(".myfooter").width(screen_width);
 	$(".About_TimeLine").width(screen_width);
-	
+	$("#HeadDownImg").width(screen_width); 
+	$("#HeadDownImg img").width(screen_width);
+	$(".youthful1").width(screen_width);
 }
  //$(document).ready(function(){
 // var screen_width = $(document.body).width();

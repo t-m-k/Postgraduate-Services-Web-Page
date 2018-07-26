@@ -134,9 +134,14 @@ body{
 	margin-top: 20px;
 }
 
-.subject_name,.subject_introduce{
+.subject_introduce{
 	margin-top: 80px;
 }
+.youthful,.youthful1{
+	height:140px;
+	margin-top:80px;
+}
+
 .first{float: left;#background-color: red;}
 .borad_img_1 img,.borad_img_2 img,.borad_img_3 img,.img_item img{
 	-moz-background-size:contain|cover;

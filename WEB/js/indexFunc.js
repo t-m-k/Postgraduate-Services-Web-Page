@@ -43,4 +43,3 @@ function change(target) {
 
 //AboutUs.html
 var HeadDownImg_width = document.documentElement.clientWidth;//获取页面可见宽度
-$("#HeadDownImg").width(HeadDownImg_width); 
