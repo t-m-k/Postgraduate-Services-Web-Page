@@ -37,7 +37,22 @@ function changeDivWidth(){
 // alert($(document.body).outerWidth(true));//浏览器当前窗口文档body的总宽度 包括border padding margin
 
  //});
-
+ var gifDisplay = false;
+window.setInterval(function(){
+    if(gifDisplay){
+        $('#gif').removeClass('zoomOut');
+        $('#gif').addClass('animated zoomIn');
+        
+        //$("#gif").css({"display":"block"});
+        gifDisplay = false;
+    }else{
+        $('#gif').removeClass('zoomIn');
+        //$("#gif").css({"display":"none"});
+        $('#gif').addClass('animated zoomOut');
+        gifDisplay = true;
+    }
+    
+},3000);
 $(function(){
     //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
     $(function () {
@@ -57,5 +72,7 @@ $(function(){
             $('body,html').animate({scrollTop:0},1000);
             return false;
         });
+
+
     });
 });

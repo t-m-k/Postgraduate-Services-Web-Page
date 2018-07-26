@@ -319,3 +319,13 @@ border: 3px solid black;
 border-color: white transparent transparent white;
 transform:rotate(45deg);
 }
+#gif{position:fixed!important;position:absolute;left:100px;bottom:100px;top:expression(offsetParent.scrollTop+offsetParent.clientHeight-149);cursor:pointer; #onClick="this.parentNode.parentNode.style.display='none';"
+}
+#gif img{
+    -moz-background-size:contain|cover;
+    -webkit-background-size:contain|cover;
+    -o-background-size:contain|cover;
+    background-size:contain|cover;
+    width:100%;
+    height: 100%;
+}
