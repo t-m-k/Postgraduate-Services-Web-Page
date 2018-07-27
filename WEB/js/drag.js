@@ -4,6 +4,7 @@
  * date 2015-08-18
  * 拖动滑块
  */
+ var dragok = false;
 (function($){
     $.fn.drag = function(options){
         var x, drag = this, isMove = false, defaults = {
@@ -54,8 +55,21 @@
             handler.unbind('mousedown');
             $(document).unbind('mousemove');
             $(document).unbind('mouseup');
+			dragok = true;
         }
     };
 })(jQuery);
 
+function submit(){
+	var name=document.getElementById("name").value;
+	var phone=document.getElementById("phone").value;
+	var province=document.getElementById("province").value;
+	var school=document.getElementById("caselect").value;
+	var subject=document.getElementById("deselect").value;
+	
+	if(name == "" || phone == "")window.wxc.xcConfirm("信息不能为空！", window.wxc.xcConfirm.typeEnum.info);
+	else if(name.length<2 || phone.length<9 || phone.length>13)window.wxc.xcConfirm("信息有误！", window.wxc.xcConfirm.typeEnum.info);
+	else if(!dragok)window.wxc.xcConfirm("请先验证！", window.wxc.xcConfirm.typeEnum.info);
+	else window.wxc.xcConfirm("请保证信息正确，我们的工作人员会稍后与你联系！", window.wxc.xcConfirm.typeEnum.confirm);
+}
 

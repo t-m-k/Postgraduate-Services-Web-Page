@@ -37,13 +37,12 @@ function changeDivWidth(){
 // alert($(document.body).outerWidth(true));//浏览器当前窗口文档body的总宽度 包括border padding margin
 
  //});
- var gifDisplay = false;
+ var gifDisplay = true;
 window.setInterval(function(){
     if(gifDisplay){
+		$("#gif").css({"visibility":"visible"});
         $('#gif').removeClass('zoomOut');
         $('#gif').addClass('animated zoomIn');
-        
-        //$("#gif").css({"display":"block"});
         gifDisplay = false;
     }else{
         $('#gif').removeClass('zoomIn');
@@ -76,3 +75,4 @@ $(function(){
 
     });
 });
+
